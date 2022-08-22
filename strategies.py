@@ -5,16 +5,22 @@ Created on Wed Aug 10 17:28:44 2022
 
 @author: felixdubicki-piper
 """
-#STRATEGIES#
 
 import math as m
 import time
 from simulation import *
 from config import *
 
-# run for different starting angles (betwen 45º and 90º exclusive)
-def crissCrossStrat():
 
+def crissCrossStrat() -> list:
+    """Run for different starting angles (betwen 45º and 90º, exclusive).
+
+    Returns
+    -------
+    angles : list
+        DESCRIPTION.
+
+    """
     angles = [[46], [50], [55], [60], [65], [70], [75], [80], [85], [89]]
 
     for i in range(len(angles)):
